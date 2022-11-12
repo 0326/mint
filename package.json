@@ -1,0 +1,27 @@
+{
+  "name": "mint-workspace",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "MintEditor Project",
+  "scripts": {
+    "version": "lerna version",
+    "publish": "lerna publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0326/mint.git"
+  },
+  "author": "0326",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0326/mint/issues"
+  },
+  "homepage": "https://github.com/0326/mint#readme",
+  "dependencies": {
+    "lerna": "^6.0.3"
+  }
+}
