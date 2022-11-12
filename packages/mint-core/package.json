@@ -1,0 +1,12 @@
+{
+  "name": "@mint/core",
+  "version": "0.0.1-dev.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "slate": "^0.85.0"
+  }
+}
