@@ -4,10 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e9afb96a76e78e09cb6087a6b41127583fc85163"
+  "devDependencies": {
+    "@babel/runtime": "^7.3.4",
+    "@parcel/transformer-less": "^2.7.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "install-peers": "^1.0.3",
+    "parcel": "^2.7.0",
+    "source-map-loader": "0.2.4"
+  },
+  "gitHead": "e9afb96a76e78e09cb6087a6b41127583fc85163",
+  "dependencies": {
+    "@mint-editor/core": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

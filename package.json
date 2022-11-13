@@ -12,6 +12,7 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test --parallel",
+    "start": "yarn workspace mint-editor run start",
     "start-core": "yarn workspace @mint-editor/core run start",
     "test-core": "yarn workspace @mint-editor/core run test",
     "typecheck": "turbo run typecheck",
@@ -42,5 +43,8 @@
     "npm": ">=8.0.0",
     "node": ">=16.0.0"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
 }
