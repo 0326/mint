@@ -1,5 +1,5 @@
 {
-  "name": "@mint/plugins",
+  "name": "@mint-editor/plugins",
   "version": "0.0.1-dev.1",
   "description": "",
   "main": "index.js",
