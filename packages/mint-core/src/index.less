@@ -1,0 +1,14 @@
+.mint-editor-container {
+  min-height: 100px;
+  border: 1px solid #eee;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+  &:focus {
+    border-color: #999;
+  }
+  &[contenteditable="false"] {
+    opacity: .6;
+    background: #efefef;
+  }
+}

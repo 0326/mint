@@ -2,11 +2,12 @@
   "name": "@mint-editor/core",
   "version": "0.0.1-dev.0",
   "description": "",
-  "types": "src/index.ts",
-  "main": "src/index.ts",
+  "types": "dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "esr cli/index.ts",
     "typecheck": "tsc",
+    "build": "esbuild ./src/index.ts --outfile=dist/index.js",
+    "build:watch": "yarn build --watch",
     "lint": "eslint .",
     "lint:fix": "yarn lint:fix",
     "test": "jest",
@@ -14,7 +15,6 @@
   },
   "dependencies": {
     "slate": "^0.85.0",
-    "commander": "^8.3.0",
     "esbuild-runner": "^2.2.1"
   },
   "devDependencies": {
