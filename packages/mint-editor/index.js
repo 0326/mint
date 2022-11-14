@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ReactDOM from "react-dom/client";
-import { App } from "./src/index.tsx";
+import { MintEditorComponent } from "./src/index.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<MintEditorComponent />);
