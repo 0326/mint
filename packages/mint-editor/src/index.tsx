@@ -7,13 +7,14 @@ import './index.less';
 
 export const MintEditorComponent = () => {
   const [content, setContent] = useState();
-  const [editor, setEditor] = useState();
+  const [editor, setEditor] = useState<MintEditor>();
 
   useLayoutEffect(() => {
     const editor = new MintEditor({
       container: document.getElementById('mint-editor'),
     });
     setEditor(editor);
+    window.editor = editor;
   }, []);
 
   const onToolbarClick = (type, activeTools) => {
@@ -29,7 +30,8 @@ export const MintEditorComponent = () => {
       <div>
         <button onClick={() => {
           const data = editor?.getContent();
-          document.getElementById('logger').innerHTML = data;
+          console.log('innerHTML:', JSON.stringify(data));
+          document.getElementById('logger').innerText = data;
         }}>获取编辑器内容</button>
       </div>
       <div>

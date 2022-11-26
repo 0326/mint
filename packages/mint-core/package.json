@@ -4,9 +4,12 @@
   "description": "",
   "types": "dist/index.js",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "typecheck": "tsc",
-    "build": "esbuild ./src/index.ts --outfile=dist/index.js",
+    "build": "esbuild ./src/index.ts --bundle --format=esm --outdir=dist",
     "build:watch": "yarn build --watch",
     "lint": "eslint .",
     "lint:fix": "yarn lint:fix",

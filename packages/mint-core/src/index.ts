@@ -29,7 +29,7 @@ export class MintEditor {
       throw new Error('ParamsError: missing container');
     }
     this.container.classList.add('mint-editor-container');
-    this.container.setAttribute('contenteditable', !this.disabled);
+    this.container.setAttribute('contenteditable', String(!this.disabled));
   }
 
   public getContent() {
